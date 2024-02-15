@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celebrare</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-green-50">
+    <div class="flex">
+      
+    </div>
+    <div class="flex">
+      <div class="flex rounded-md h-96 w-1/3 bg-green-300 ml-96 mt-10 pt-10">
+        <textarea
+          class="text-2xl mb-20 rounded-lg ml-32 mt-10 bg-green-300"
+          name="input text"
+          placeholder="Input Text"
+          id="inputText"
+          cols="20"
+          rows="20"
+        ></textarea>
+      </div>
+      <div class="flex ml-10 mt-20">
+        <form action="/">
+          <label class="bg-lime-300 p-1 rounded-md" for="font">Font</label>
+          <select class="bg-white p-1 rounded-md" name="font" id="font">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Gill Sans">Gill Sans</option>
+            <option value="monospace">monospace</option>
+          </select>
+          <br /><br />
+
+          <div class="flex mt-5">
+            <label class="bg-lime-500 p-1 rounded-md" for="size">Size</label>
+            <select name="size" id="fontSize">
+              <option value="12">12</option>
+              <option value="16">16</option>
+              <option value="20">20</option>
+              <option value="24">24</option>
+              <option value="28">28</option>
+              <option value="30">30</option>
+              <option value="32">32</option>
+              <option value="34">34</option>
+              <option value="36">36</option>
+            </select>
+
+            <label class="ml-5 bg-orange-500 p-1 rounded-md" for="color"
+              >Color</label
+            >
+            <select name="color" id="fontColor">
+              <option value="red">Red</option>
+              <option value="#00ff00">Green</option>
+              <option value="rgb(0, 0, 255)">Blue</option>
+              <option value="hsl(120, 100%, 50%)">Teal</option>
+              <option value="rgb(255, 255, 0)">Yellow</option>
+              <option value="rgb(255, 165, 0)">Orange</option>
+            </select>
+          </div>
+
+          <br /><br />
+
+          <input
+            class="rounded-md bg-green-200 p-1 ring-1 ring-blue-500"
+            type="submit"
+            value="Add Text"
+            id="addTextButton"
+          />
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
